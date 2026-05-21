@@ -1,0 +1,286 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#fff7ed;
+  color:#333;
+  line-height:1.7;
+}
+
+/* Navbar */
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:20px 8%;
+
+  background:white;
+
+  position:sticky;
+  top:0;
+  z-index:1000;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.logo{
+  font-size:1.8rem;
+  font-weight:bold;
+  color:#ea580c;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:25px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#444;
+  font-weight:bold;
+
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#ea580c;
+}
+
+/* Hero Section */
+
+.hero{
+  height:420px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg");
+
+  background-size:cover;
+  background-position:center;
+
+  color:white;
+
+  padding:20px;
+}
+
+.hero h1{
+  font-size:4rem;
+  margin-bottom:15px;
+  letter-spacing:1px;
+}
+
+.hero p{
+  font-size:1.2rem;
+  max-width:600px;
+}
+
+/* Common Section */
+
+section{
+  padding:70px 10%;
+}
+
+section h2{
+  text-align:center;
+  font-size:2.3rem;
+  margin-bottom:35px;
+
+  color:#9a3412;
+}
+
+/* Story Section */
+
+.story{
+  background:#fffaf5;
+}
+
+.story p{
+  max-width:900px;
+  margin:0 auto 20px auto;
+
+  font-size:1.05rem;
+  color:#555;
+}
+
+/* Specialities */
+
+.speciality-container{
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:25px;
+}
+
+.speciality-card{
+  background:white;
+
+  padding:30px 20px;
+
+  border-radius:22px;
+
+  text-align:center;
+
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+  transition:0.35s;
+}
+
+.speciality-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 12px 24px rgba(0,0,0,0.12);
+}
+
+.speciality-card h3{
+  color:#ea580c;
+  margin-bottom:12px;
+  font-size:1.3rem;
+}
+
+.speciality-card p{
+  color:#666;
+}
+
+/* Visit Section */
+
+.visit{
+  background:#fffaf5;
+}
+
+.visit-content{
+  display:flex;
+  justify-content:space-between;
+  gap:40px;
+  flex-wrap:wrap;
+
+  align-items:flex-start;
+}
+
+.contact-info{
+  flex:1;
+}
+
+.contact-info p{
+  margin-bottom:18px;
+  font-size:1.05rem;
+  color:#555;
+}
+
+/* Table */
+
+table{
+  flex:1;
+
+  width:100%;
+  min-width:320px;
+
+  border-collapse:collapse;
+
+  background:white;
+
+  border-radius:18px;
+  overflow:hidden;
+
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+table th{
+  background:#ea580c;
+  color:white;
+}
+
+table th,
+table td{
+  padding:16px;
+  text-align:center;
+  border-bottom:1px solid #eee;
+}
+
+table tr:hover{
+  background:#fff7ed;
+}
+
+/* Footer */
+
+footer{
+  background:#7c2d12;
+
+  color:white;
+
+  text-align:center;
+
+  padding:40px 20px;
+}
+
+footer h3{
+  font-size:1.8rem;
+  margin-bottom:12px;
+}
+
+footer p{
+  margin-bottom:15px;
+}
+
+.socials{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.socials a{
+  color:#fed7aa;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.socials a:hover{
+  color:white;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .hero{
+    height:350px;
+  }
+
+  .hero h1{
+    font-size:2.6rem;
+  }
+
+  .hero p{
+    font-size:1rem;
+  }
+
+  .speciality-container{
+    grid-template-columns:1fr;
+  }
+
+  .visit-content{
+    flex-direction:column;
+  }
+
+}

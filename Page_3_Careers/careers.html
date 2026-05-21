@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Careers - Spice Junction</title>
+
+  <link rel="stylesheet" href="careers.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar">
+
+    <div class="logo">
+      Spice Junction
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="../Page_1_Menu/index.html">Menu</a></li>
+      <li><a href="../Page_2_About/index.html">About</a></li>
+      <li><a href="careers.html">Careers</a></li>
+    </ul>
+
+  </nav>
+
+
+  <!-- Hero -->
+
+  <section class="hero">
+
+    <h1>Join Our Team at Spice Junction</h1>
+
+    <p>
+      We are looking for passionate people who love food,
+      hospitality, and teamwork.
+    </p>
+
+  </section>
+
+
+  <!-- Success / Error Message -->
+
+  <div class="message success hidden" id="successMessage">
+    Application submitted successfully!
+  </div>
+
+  <div class="message error hidden" id="errorMessage">
+    Failed to submit application.
+  </div>
+
+
+  <!-- Application Form -->
+
+  <section class="form-section">
+
+    <form id="applicationForm">
+
+      <!-- Full Name -->
+
+      <div class="form-group">
+
+        <label>Full Name</label>
+
+        <input
+          type="text"
+          id="fullName"
+          placeholder="Enter your full name"
+        >
+
+        <p class="error-text" id="nameError"></p>
+
+      </div>
+
+
+      <!-- Email -->
+
+      <div class="form-group">
+
+        <label>Email</label>
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+        >
+
+        <p class="error-text" id="emailError"></p>
+
+      </div>
+
+
+      <!-- Phone -->
+
+      <div class="form-group">
+
+        <label>Phone Number</label>
+
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Enter your phone number"
+        >
+
+        <p class="error-text" id="phoneError"></p>
+
+      </div>
+
+
+      <!-- Position -->
+
+      <div class="form-group">
+
+        <label>Position Applied For</label>
+
+        <select id="position">
+
+          <option value="">Select Position</option>
+
+          <option value="Chef">Chef</option>
+
+          <option value="Waiter">Waiter</option>
+
+          <option value="Manager">Manager</option>
+
+          <option value="Delivery">Delivery</option>
+
+          <option value="Cashier">Cashier</option>
+
+        </select>
+
+        <p class="error-text" id="positionError"></p>
+
+      </div>
+
+
+      <!-- Experience -->
+
+      <div class="form-group">
+
+        <label>Experience in Years</label>
+
+        <input
+          type="number"
+          id="experience"
+          min="0"
+          placeholder="Enter years of experience"
+        >
+
+        <p class="error-text" id="experienceError"></p>
+
+      </div>
+
+
+      <!-- Reason -->
+
+      <div class="form-group">
+
+        <label>Why should we hire you?</label>
+
+        <textarea
+          id="reason"
+          rows="5"
+          placeholder="Write at least 20 characters"
+        ></textarea>
+
+        <p class="error-text" id="reasonError"></p>
+
+      </div>
+
+
+      <!-- Submit Button -->
+
+      <button type="submit" id="submitBtn">
+        Submit Application
+      </button>
+
+    </form>
+
+  </section>
+
+  <script type = "module" src="careers.js"></script>
+
+</body>
+</html>

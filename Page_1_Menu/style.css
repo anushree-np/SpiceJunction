@@ -1,0 +1,278 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#fff7ed;
+  color:#333;
+  padding-bottom:110px;
+}
+/* Navbar */
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:20px 8%;
+
+  background:white;
+
+  position:sticky;
+  top:0;
+  z-index:1000;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.logo{
+  font-size:1.8rem;
+  font-weight:bold;
+  color:#ea580c;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:25px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#444;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#ea580c;
+}
+/* Hero Section */
+
+.hero{
+  text-align:center;
+  padding:50px 20px;
+  background:linear-gradient(to right,#f97316,#fb923c);
+  color:white;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero h1{
+  font-size:3.2rem;
+  margin-bottom:12px;
+  letter-spacing:1px;
+}
+
+.hero p{
+  font-size:1.1rem;
+  opacity:0.95;
+}
+
+/* Filter Buttons */
+
+.filters{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+  padding:30px 20px;
+}
+
+.filter-btn{
+  padding:12px 22px;
+  border:none;
+  border-radius:30px;
+  background:white;
+  color:#ea580c;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.filter-btn:hover{
+  transform:translateY(-2px);
+  background:#ffedd5;
+}
+
+.filter-btn.active{
+  background:#ea580c;
+  color:white;
+}
+
+/* Menu Grid */
+
+.menu-container{
+  width:92%;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+
+  gap:28px;
+}
+
+/* Cards */
+
+.card{
+  background:white;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+  transition:0.35s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 12px 28px rgba(0,0,0,0.15);
+}
+
+/* Images */
+
+.food-image{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+
+  transition:0.4s;
+}
+
+.card:hover .food-image{
+  transform:scale(1.06);
+}
+
+/* Content */
+
+.card-content{
+  padding:18px;
+}
+
+.title-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  margin-bottom:12px;
+}
+
+.title-row h3{
+  font-size:1.3rem;
+  color:#7c2d12;
+}
+
+/* Veg / Non Veg Indicator */
+
+.indicator{
+  width:15px;
+  height:15px;
+  border-radius:50%;
+}
+
+.veg{
+  background:green;
+}
+
+.nonveg{
+  background:red;
+}
+
+/* Price */
+
+.price{
+  color:#ea580c;
+  font-size:1.15rem;
+  font-weight:bold;
+
+  margin-bottom:10px;
+}
+
+/* Description */
+
+.description{
+  color:#666;
+  line-height:1.5;
+  margin-bottom:18px;
+}
+
+/* Buttons */
+
+.add-btn{
+  width:100%;
+  padding:13px;
+
+  border:none;
+  border-radius:12px;
+
+  background:#ea580c;
+  color:white;
+
+  font-size:1rem;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.add-btn:hover{
+  background:#c2410c;
+}
+
+/* Floating Cart */
+
+.cart-bar{
+  position:fixed;
+
+  bottom:20px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:90%;
+  max-width:700px;
+
+  background:white;
+
+  border-radius:18px;
+
+  padding:18px 28px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+  font-size:1.1rem;
+  font-weight:bold;
+
+  color:#7c2d12;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  .hero h1{
+    font-size:2.3rem;
+  }
+
+  .menu-container{
+    grid-template-columns:1fr;
+  }
+
+  .food-image{
+    height:220px;
+  }
+
+  .cart-bar{
+    width:95%;
+    padding:15px 20px;
+    font-size:1rem;
+  }
+
+}

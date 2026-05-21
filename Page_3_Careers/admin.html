@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Admin Panel - Spice Junction</title>
+
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- Login Section -->
+
+  <div class="container">
+
+    <div class="login-box" id="loginBox">
+
+      <h1>Admin Login</h1>
+
+      <p class="subtitle">
+        Login to view job applications
+      </p>
+
+      <form id="loginForm">
+
+        <div class="form-group">
+
+          <label>Email</label>
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter admin email"
+          >
+
+        </div>
+
+        <div class="form-group">
+
+          <label>Password</label>
+
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter password"
+          >
+
+        </div>
+
+        <p class="error-message" id="loginError"></p>
+
+        <button type="submit" id="loginBtn">
+          Login
+        </button>
+
+      </form>
+
+    </div>
+
+
+    <!-- Dashboard -->
+
+    <div class="dashboard hidden" id="dashboard">
+
+      <div class="dashboard-header">
+
+        <h1>Applications Dashboard</h1>
+
+        <button id="logoutBtn">
+          Logout
+        </button>
+
+      </div>
+
+      <p id="loadingText">
+        Loading applications...
+      </p>
+
+      <p id="emptyText" class="hidden">
+        No applications received yet.
+      </p>
+
+      <div class="table-container hidden" id="tableContainer">
+
+        <table>
+
+          <thead>
+
+            <tr>
+              <th>S.No</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Position</th>
+              <th>Experience</th>
+              <th>Reason</th>
+              <th>Submitted At</th>
+            </tr>
+
+          </thead>
+
+          <tbody id="applicationsTable"></tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script type = "module"  src="admin.js"></script>
+
+</body>
+</html>

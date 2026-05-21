@@ -69,7 +69,7 @@ const menuItems = [
     description: "Soft milk dumplings in sugar syrup.",
     isVeg: true,
     image:
-      "https://images.unsplash.com/photo-1605197161470-5c7a5d4d4a1f?q=80&w=1000&auto=format&fit=crop"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5uscY_Z_4NoYPGLbhDb2LYZmG1Boi9NV-xNHr5jnLC2_UDlMKZYmqHBgJoDSkq1TTPfoBM9WYanKRCi0JrMYrFeqFF4-qaZu2CsiXAKke&s=10"
   },
 
   {

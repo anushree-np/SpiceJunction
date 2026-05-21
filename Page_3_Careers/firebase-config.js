@@ -10,7 +10,7 @@ from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCwXYpF3D4oZtxS0OeTVKlTu6HcN9WvMVM",
+  apiKey: "//add your api key",
   authDomain: "spicejunction-e4c71.firebaseapp.com",
   projectId: "spicejunction-e4c71",
   storageBucket: "spicejunction-e4c71.firebasestorage.app",
